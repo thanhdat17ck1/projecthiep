@@ -1,7 +1,5 @@
 .c-news {
     &__box {
-        display: none;
-
         &:not(:last-child) {
             margin-bottom: 40px;
         }

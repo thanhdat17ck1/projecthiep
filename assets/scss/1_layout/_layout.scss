@@ -5,6 +5,10 @@ body {
   // color: #fff;
   // font-weight: 400;
 
+  background-color: #09052a;
+  overflow-x: unset;
+  color: #f8f8f8;
+
   &.is-active {
     overflow: hidden;
   }

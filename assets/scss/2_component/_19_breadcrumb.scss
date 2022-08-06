@@ -1,0 +1,20 @@
+.c-breadcrumb {
+    margin-top: 20px;
+
+    ul {
+        display: flex;
+
+        .home {
+            display: flex;
+            align-items: center;
+
+            i {
+                margin-right: 5px;
+            }
+        }
+
+        >* {
+            margin-right: 10px;
+        }
+    }
+}

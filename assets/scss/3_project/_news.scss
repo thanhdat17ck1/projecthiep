@@ -1,0 +1,28 @@
+/*------------------------------------------------------------
+Css of home page
+------------------------------------------------------------*/
+.p-search {
+    .l-container {
+        display: flex;
+        margin-top: 40px;
+    }
+
+    .c-news__info p {
+        display: -webkit-box;
+        max-width: 100%;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .c-news__info .link {
+        display: block;
+        display: -webkit-box;
+        max-width: 100%;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}

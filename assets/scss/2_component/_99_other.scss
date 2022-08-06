@@ -5,6 +5,17 @@ other
 /*
 ------------------------------------------------------------*/
 
+.map {
+    width: 100%;
+    height: 500px;
+    margin-top: 50px;
+
+    iframe {
+        width: 100%;
+        height: 100%;
+    }
+}
+
 .logo-main {
     width: 156px;
 
@@ -14,6 +25,51 @@ other
 
     @include mq(sm, max) {
         width: 116px;
+    }
+}
+
+.navigation {
+    justify-content: center;
+    margin-top: 30px;
+
+    .nav-links {
+        display: flex;
+
+        >* {
+            width: 35px;
+            height: 35px;
+            display: block;
+            background-color: #4792bc;
+            margin: 0 5px;
+            line-height: 35px;
+            text-align: center;
+
+            &.current {
+                color: #09052a;
+                background-color: #e4e4e4;
+            }
+        }
+    }
+}
+
+.single-content {
+    >* {
+        font-family: $main-fonts;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        font-size: 2.6rem;
+    }
+
+    a {
+        color: blue;
+    }
+
+    ul {
+        li {}
     }
 }
 
