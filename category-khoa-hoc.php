@@ -16,7 +16,7 @@
             <li>Khóa học</li>
         </ul>
     </div>
-    <section class="">
+    <section class="sec-course">
         <div class="c-heading">
             <h2>Danh sách khóa học</h2>
         </div>

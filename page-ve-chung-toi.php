@@ -10,7 +10,7 @@
             </div>
         </div>
     </div>
-    <div class="l-container">
+    <div class="content l-container">
         <div>
             Nhóm các công ty của Zeal (gọi chung là Tập đoàn Zeal) là một danh mục đầu tư kinh doanh bao gồm các tổ chức
             tài chính được điều tiết (tên giao dịch là ZFX) và các công ty công nghệ tài chính chuyên về các giải pháp
@@ -26,7 +26,7 @@
             xác định bởi thị trường. Tính minh bạch trong việc định giá đảm bảo rằng các dịch vụ môi giới của Zeal được
             bù đắp bằng các khoản kê giá.
         </div>
-        <section class="mw690">
+        <section class="lienhe">
             <h3 class="u-center">LIÊN HỆ CHÚNG TÔI</h3>
             <p class="u-center">
                 Phản hồi của bạn là món quà lớn nhất của chúng tôi, <br>

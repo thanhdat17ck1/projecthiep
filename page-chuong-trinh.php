@@ -17,10 +17,10 @@
                     <h3>Tham gia ZFX Cashback 6$ – Nhân đôi nguồn tiền</h3>
                     <p>Tham gia ngay chương trình HOÀN TIỀN CÙNG ZFX và nhận đến 6 USD/lot nếu bạn đang giao dịch Tiền
                         Tệ, Vàng, Bạc, Dầu và Chỉ số.</p>
-                    <a href="<?php echo home_url('tham-gia'); ?>">THAM GIA NGAY</a>
+                    <a href="<?php echo home_url('tham-gia'); ?>" class="c-btn">THAM GIA NGAY</a>
                 </div>
                 <div class="promotions__img">
-                    <img src="<?php bloginfo('stylesheet_directory'); ?>\/assets/img/chuong-trinh/img.png" alt="#">
+                    <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/chuong-trinh/img.png" alt="#">
                 </div>
             </li>
         </ol>

@@ -14,9 +14,9 @@
                             <a class="instagram" href="#"><i class="icon-social-instagram"></i></a>
                         </li>
                     </ul>
-                    <p>Copyright © 2018 <a href="www.uideck.com"></a>| Crafted by <a href="#" target="_blank">UIdeck</a>
+                    <p>Bản quyền © 2022 <a href="www.uideck.com"></a>| Tạo bởi <a href="#" target="_blank">Ccmacro</a>
                     </p>
-                    <ul class="nav nav-inline justify-content-center ">
+                    <!-- <ul class="nav nav-inline justify-content-center ">
                         <li class="nav-item">
                             <a class="nav-link active" href="#">About Prime</a>
                         </li>
@@ -32,7 +32,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">Contact</a>
                         </li>
-                    </ul>
+                    </ul> -->
                 </div>
             </div>
         </div>
@@ -68,6 +68,11 @@
 <script src="<?php bloginfo('stylesheet_directory'); ?>\assets\js\nivo-lightbox.js"></script>
 <script src="<?php bloginfo('stylesheet_directory'); ?>\assets\js\jquery.slicknav.js"></script>
 <script src="<?php bloginfo('stylesheet_directory'); ?>\assets\js\contact-form-script.min.js"></script>
+
+<?php if(is_front_page()) { ?>
+<script src="<?php bloginfo('stylesheet_directory'); ?>\assets\js\three.js"></script>
+<?php
+} ?>
 <script src="<?php bloginfo('stylesheet_directory'); ?>\assets\js\main.js"></script>
 <?php wp_footer() ?>
 </body>

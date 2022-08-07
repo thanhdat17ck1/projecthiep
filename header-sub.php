@@ -5,7 +5,7 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Team | Prime Conference & Event HTML5 Template</title>
+    <title>Ccmacro - NÂNG TẦM GIÁ TRỊ - KẾT NỐI CỘNG ĐỒNG</title>
 
     <link rel="stylesheet" type="text/css"
         href="<?php bloginfo('stylesheet_directory'); ?>\assets\css\bootstrap.min.css">

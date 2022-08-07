@@ -3,7 +3,7 @@
 ?>
 <main>
 
-    <section>
+    <section class="top-news">
         <h3 class="u-center">TIN TỨC</h3>
         <div class="c-post">
             <?php

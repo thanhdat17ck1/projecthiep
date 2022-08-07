@@ -10,7 +10,7 @@
                 <span class="icon-menu"></span>
             </button>
             <a href="<?php echo home_url(); ?>" class="navbar-brand"><img
-                    src="<?php bloginfo('stylesheet_directory'); ?>\assets\img\logo.png" alt=""></a>
+                    src="<?php bloginfo('stylesheet_directory'); ?>\assets\img\logo.svg" alt=""></a>
         </div>
         <div class="collapse navbar-collapse" id="main-navbar">
             <ul class="navbar-nav mr-auto w-100 justify-content-end">
@@ -26,7 +26,11 @@
 
 
 
-                <?php if ( is_category( 'khoa-hoc' ) ): ?>
+                <?php if ( is_category( 'khoa-hoc' )
+                || is_category( 'kien-thuc-can-ban' ) 
+                || is_category( 'kien-thuc-dau-tu' ) 
+                || is_category( 'phan-tich-ky-thuat' ))
+                : ?>
                 <li class="nav-item dropdown active">
                     <?php else: ?>
                 <li class="nav-item dropdown">
@@ -48,8 +52,10 @@
                             thuật</a>
                     </div>
                 </li>
-
-                <?php if(is_archive('tin-tuc')): ?>
+                <?php global $wp;
+                $current_slug = $wp->request; 
+                ?>
+                <?php if(is_archive('tin-tuc') && ($current_slug == "tin-tuc")): ?>
                 <li class="nav-item active">
                     <?php else: ?>
                 <li class="nav-item">
@@ -69,7 +75,7 @@
                     </a>
                 </li>
 
-                <?php if(is_page('coppy-trade')): ?>
+                <!-- <?php if(is_page('coppy-trade')): ?>
                 <li class="nav-item active">
                     <?php else: ?>
                 <li class="nav-item">
@@ -77,7 +83,7 @@
                     <a class="nav-link" href="<?php echo home_url('ve-chung-toi'); ?>">
                         Coppy trade
                     </a>
-                </li>
+                </li> -->
 
                 <?php if(is_page('ve-chung-toi')): ?>
                 <li class="nav-item active">
@@ -95,22 +101,11 @@
     <ul class="mobile-menu">
         <li>
             <a href="#">
-                Home
+                Trang chủ
             </a>
-            <ul class="dropdown">
-                <li>
-                    <a href="index.html">Home 1</a>
-                </li>
-                <li>
-                    <a href="index-2.html">Home 2</a>
-                </li>
-                <li>
-                    <a href="index-3.html">Home 3</a>
-                </li>
-            </ul>
         </li>
         <li>
-            <a href="about.html">About</a>
+            <a href="about.html">Kiến thức</a>
         </li>
         <li>
             <a class="active" href="#">

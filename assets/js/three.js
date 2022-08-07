@@ -17669,6 +17669,7 @@ init();
 animate();
 
 function init() {
+  const tbody = document.getElementById("test");
   container = document.createElement("div");
   document.body.appendChild(container);
 
@@ -17686,10 +17687,13 @@ function init() {
 
   var PI2 = Math.PI * 2;
   var material = new THREE.ParticleCanvasMaterial({
-    color: 0xe00674,
+    // chinhr mau hot
+    // color: 0xe00674,// hồng đỏ
+    color: 0x00ffff, // xanh dương sang
     program: function (context) {
       context.beginPath();
-      context.arc(0, 0, 3, 0, PI2, true);
+      // Chỉnh kích thước hột
+      context.arc(0, 0, 2.5, 0, PI2, true);
       context.fill();
     },
   });
@@ -17708,6 +17712,7 @@ function init() {
   renderer = new THREE.CanvasRenderer();
   renderer.setSize(window.innerWidth, window.innerHeight);
   container.appendChild(renderer.domElement);
+  tbody.appendChild(container);
 
   document.addEventListener("mousemove", onDocumentMouseMove, false);
   document.addEventListener("touchstart", onDocumentTouchStart, false);
@@ -17719,39 +17724,21 @@ function init() {
 }
 
 function onWindowResize() {
-  windowHalfX = window.innerWidth / 2;
-  windowHalfY = window.innerHeight / 2;
-
-  camera.aspect = window.innerWidth / window.innerHeight;
-  camera.updateProjectionMatrix();
-
-  renderer.setSize(window.innerWidth, window.innerHeight);
+  //mouseX = event.clientX - windowHalfX;
+  //mouseY = event.clientY - windowHalfY;
+  //console.log("X: "+mouseX);
+  //console.log("Y: "+mouseY);
+  //mouseX = -283;
+  //mouseY = 8.5;
 }
-
 //
 
-function onDocumentMouseMove(event) {
-  mouseX = event.clientX - windowHalfX;
-  mouseY = event.clientY - windowHalfY;
-}
+// Tọa độ
+function onDocumentMouseMove(event) {}
 
-function onDocumentTouchStart(event) {
-  if (event.touches.length === 1) {
-    event.preventDefault();
+function onDocumentTouchStart(event) {}
 
-    mouseX = event.touches[0].pageX - windowHalfX;
-    mouseY = event.touches[0].pageY - windowHalfY;
-  }
-}
-
-function onDocumentTouchMove(event) {
-  if (event.touches.length === 1) {
-    event.preventDefault();
-
-    mouseX = event.touches[0].pageX - windowHalfX;
-    mouseY = event.touches[0].pageY - windowHalfY;
-  }
-}
+function onDocumentTouchMove(event) {}
 
 //
 

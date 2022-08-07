@@ -87,6 +87,14 @@ Css of home page
 
 }
 
+.top-news {
+  padding: 40px 0;
+
+  .c-post {
+    margin-top: 30px;
+  }
+}
+
 .p-search {
   margin-bottom: 137px;
 
@@ -153,6 +161,10 @@ Css of home page
       }
     }
   }
+
+  .c-post {
+    margin-top: 35px;
+  }
 }
 
 .p-form {
@@ -202,5 +214,11 @@ Css of home page
 
   &__inner {
     margin-top: 30px;
+  }
+}
+
+.p-about {
+  .content {
+    padding-top: 40px;
   }
 }

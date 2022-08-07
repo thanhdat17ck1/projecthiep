@@ -19,6 +19,11 @@ body {
   max-width: 1410px;
   margin: 0 auto;
 
+  @include mq(xxl, max) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
   &--1 {
     max-width: 1418px;
 

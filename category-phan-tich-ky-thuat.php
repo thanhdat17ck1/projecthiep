@@ -46,51 +46,7 @@ get_header('sub');
             </section>
         </div>
         <div class="p-search__right">
-            <div class="c-sidebar">
-                <h3>Xem nhiều nhất</h3>
-
-                <div class="list-topic">
-                    <div class="list-topic__item">
-                        <a href="#" class="list-topic__img">
-                            <img src="https://placehold.jp/80x80.png" alt="#">
-                        </a>
-                        <div class="list-topic__info">
-                            <span>SCAM</span>
-                            <a href="#">Lorem Ipsum is simply dummy text of the printing</a>
-                        </div>
-                    </div>
-                    <div class="list-topic__item">
-                        <a href="#" class="list-topic__img">
-                            <img src="https://placehold.jp/80x80.png" alt="#">
-                        </a>
-                        <div class="list-topic__info">
-                            <span>SCAM</span>
-                            <a href="#">Lorem Ipsum is simply dummy text of the printing</a>
-                        </div>
-                    </div>
-                    <div class="list-topic__item">
-                        <a href="#" class="list-topic__img">
-                            <img src="https://placehold.jp/80x80.png" alt="#">
-                        </a>
-                        <div class="list-topic__info">
-                            <span>SCAM</span>
-                            <a href="#">Lorem Ipsum is simply dummy text of the printing</a>
-                        </div>
-                    </div>
-                </div>
-                <h3>Popular tags</h3>
-                <div class="list-tags">
-                    <span>Crypto</span>
-                    <span>Virtual Land</span>
-                    <span>Metaverse</span>
-                    <span>NFT Marketplace</span>
-                    <span>Token</span>
-                    <span>NFTs</span>
-                    <span>Bitcoin</span>
-                    <span>Arts</span>
-                    <span>Wallet</span>
-                </div>
-            </div>
+            <?php include( get_template_directory() . '/includes/sidebar.php' ); ?>
         </div>
     </div>
 </main>
