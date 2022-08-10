@@ -55,7 +55,7 @@
 </div>
 
 <script src="<?php bloginfo('stylesheet_directory'); ?>\assets\js\jquery-min.js"></script>
-<script src="<?php bloginfo('stylesheet_directory'); ?>\assets\js\popper.min.js"></script>
+<!-- <script src="<?php bloginfo('stylesheet_directory'); ?>\assets\js\popper.min.js"></script>
 <script src="<?php bloginfo('stylesheet_directory'); ?>\assets\js\bootstrap.min.js"></script>
 <script src="<?php bloginfo('stylesheet_directory'); ?>\assets\js\color-switcher.js"></script>
 <script src="<?php bloginfo('stylesheet_directory'); ?>\assets\js\jquery.countdown.min.js"></script>
@@ -67,7 +67,7 @@
 <script src="<?php bloginfo('stylesheet_directory'); ?>\assets\js\jquery.slicknav.js"></script>
 <script src="<?php bloginfo('stylesheet_directory'); ?>\assets\js\nivo-lightbox.js"></script>
 <script src="<?php bloginfo('stylesheet_directory'); ?>\assets\js\jquery.slicknav.js"></script>
-<script src="<?php bloginfo('stylesheet_directory'); ?>\assets\js\contact-form-script.min.js"></script>
+<script src="<?php bloginfo('stylesheet_directory'); ?>\assets\js\contact-form-script.min.js"></script> -->
 
 <?php if(is_front_page()) { ?>
 <script src="<?php bloginfo('stylesheet_directory'); ?>\assets\js\three.js"></script>

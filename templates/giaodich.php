@@ -1,21 +1,25 @@
-<?php 
-    get_header('sub');
+<?php
+/**
+ * Template Name: Giao dịch
+ *  
+ */
+
+get_header('sub');
 ?>
 
-<main class="p-search p-thamgia">
+<!-- Content are -->
+
+<main class="p-sub">
     <div id="page-banner-program" class="page-banner">
         <div class="page-banner-title">
             <div class="text-center">
-                <h2>Chương trình</h2>
+                <h2><?php the_title(); ?></h2>
             </div>
         </div>
     </div>
-    <div class="c-form">
-        <?php echo do_shortcode( '[mwform_formkey key="83"]' ); ?>
-    </div>
 </main>
 
-
+<!--▲ Content are ▲-->
 <?php
     get_footer();
 ?>

@@ -1,0 +1,1 @@
+<?php if(function_exists('yoast_breadcrumb') ) {yoast_breadcrumb('<div class="crumb l-container"><p id="breadcrumbs"> <i class="fa fa-home"></i>','</p></div>'); } ?>

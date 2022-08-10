@@ -87,14 +87,6 @@ Css of home page
 
 }
 
-.top-news {
-  padding: 40px 0;
-
-  .c-post {
-    margin-top: 30px;
-  }
-}
-
 .p-search {
   margin-bottom: 137px;
 
@@ -161,10 +153,6 @@ Css of home page
       }
     }
   }
-
-  .c-post {
-    margin-top: 35px;
-  }
 }
 
 .p-form {
@@ -217,8 +205,17 @@ Css of home page
   }
 }
 
-.p-about {
-  .content {
-    padding-top: 40px;
+.p-thamgia {
+  .c-form {
+    margin-top: 50px;
+  }
+
+  .c-btn {
+    height: 40px;
+    width: 150px;
+  }
+
+  .btn-submit {
+    text-align: center;
   }
 }

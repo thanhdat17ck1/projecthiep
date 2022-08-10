@@ -4,7 +4,7 @@
 <main>
 
     <section class="top-news">
-        <h3 class="u-center">TIN TỨC</h3>
+        <h3 class="u-center">TIN TỨC MỚI NHẤT</h3>
         <div class="c-post">
             <?php
             $the_query = new WP_Query(array(
@@ -31,6 +31,7 @@
             <a class="c-btn" href="<?php echo home_url('tin-tuc'); ?>">Xem tất cả</a>
         </div>
     </section>
+
 </main>
 <?php
     get_footer();

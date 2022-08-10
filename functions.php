@@ -4,6 +4,8 @@
 add_filter('use_block_editor_for_post', '__return_false');
 
 
+
+
 add_theme_support( 'post-thumbnails' );
 
 //create shortcode get url
@@ -40,4 +42,27 @@ function create_posttype() {
 }
 // Hooking up our function to theme setup
 add_action( 'init', 'create_posttype' );
+
+
+function initTheme() { 
+    //Đăng ký menu cho website
+    register_nav_menu('header-top',__('Menu top'));
+    register_nav_menu('header-main',__('Menu chính'));
+    register_nav_menu('footer-menu',__('Menu footer'));
+} 
+add_action('init','initTheme');
+
+//Code lấy nội dung bài viết rút gọn
+function teaser($limit) {
+	$excerpt = explode(' ', get_the_excerpt(), $limit);
+	if (count($excerpt)>=$limit) {
+		array_pop($excerpt);
+		$excerpt = implode(" ",$excerpt).'[...]';
+	} else {
+		$excerpt = implode(" ",$excerpt);
+	}
+	$excerpt = preg_replace('`\[[^\]]*\]`','',$excerpt);
+	return $excerpt.'...';
+}
+
 ?>
